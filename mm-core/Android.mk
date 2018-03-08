@@ -69,6 +69,7 @@ LOCAL_COPY_HEADERS      += inc/QCMetaData.h
 #             LIBRARY for Android apps
 #===============================================================================
 
+LOCAL_USE_VNDK          := true
 LOCAL_C_INCLUDES        := $(LOCAL_PATH)/src/common
 LOCAL_C_INCLUDES        += $(LOCAL_PATH)/inc
 LOCAL_PRELINK_MODULE    := false

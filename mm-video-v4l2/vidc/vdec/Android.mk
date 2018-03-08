@@ -128,12 +128,14 @@ ifeq ($(call is-platform-sdk-version-at-least, 19),true)
 libOmxVdec-def += -DADAPTIVE_PLAYBACK_SUPPORTED
 endif
 
+LOCAL_PROPRIETARY_MODULE        := true
 LOCAL_MODULE                    := libOmxVdec
 LOCAL_MODULE_TAGS               := optional
 LOCAL_CFLAGS                    := $(libOmxVdec-def)
 LOCAL_C_INCLUDES                += $(libmm-vdec-inc)
 
 LOCAL_PRELINK_MODULE    := false
+LOCAL_HEADER_LIBRARIES  := media_plugin_headers
 LOCAL_SHARED_LIBRARIES  := liblog libutils libbinder libcutils libdl libui
 
 LOCAL_SHARED_LIBRARIES  += libqdMetaData

@@ -41,6 +41,8 @@ LOCAL_SHARED_LIBRARIES :=       \
         libdl                   \
         libui                   \
 
+LOCAL_HEADER_LIBRARIES := media_plugin_headers
+
 LOCAL_MODULE := libstagefrighthw
 
 include $(BUILD_SHARED_LIBRARY)

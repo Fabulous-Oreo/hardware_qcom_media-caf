@@ -32,7 +32,8 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "OMX_QCOMExtns.h"
 #include "qc_omx_component.h"
 
-#include<stdlib.h>
+#include <stdlib.h>
+#include <pthread.h>
 
 #include <stdio.h>
 #include <inttypes.h>
